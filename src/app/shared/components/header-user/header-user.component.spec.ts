@@ -6,10 +6,14 @@ describe('HeaderUserComponent', () => {
   let component: HeaderUserComponent;
   let fixture: ComponentFixture<HeaderUserComponent>;
 
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ HeaderUserComponent ]
+    })
+    .compileComponents();
+  });
+
   beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [HeaderUserComponent]
-    });
     fixture = TestBed.createComponent(HeaderUserComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
